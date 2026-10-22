@@ -1,0 +1,111 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  0ad07607-ebe4-4887-8f67-b74a41ddc169:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-10-21T13:35:17+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 42632897-bd63-4615-b21b-a531a475f00d # Hero Image
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 28edfc29-62fb-41df-933f-02750554b298
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-10-21T13:35:17+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 37e65f76-721f-4e08-ac13-486f7d71b563 # Hero Slogan
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 016cac95-e25e-4737-a968-58fff4cdf900
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-10-21T13:35:17+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 133d8a92-7bf9-457f-95ff-5286406764c7 # Hero Subslogan
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b696be61-e3d2-49d0-8c74-006cf30fc7e8
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-10-21T13:35:17+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 934a3e2c-64e0-4915-b1f4-cbdae514f7e1 # Category Items
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b452597-acbf-4ffc-951e-0aac7f9d1bcb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-10-21T13:35:17+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: f8232b26-dcac-4606-9c41-be5e2352397a # Hero Description
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 422e6d48-f1bd-463f-8a06-49117f6fc7d1
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9ca07742-3950-46fd-830b-4850815b2e00
+        userCondition: null
+    thumbFieldKey: null
+handle: hero
+hasTitleField: false
+icon: null
+name: Hero
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'

@@ -1,0 +1,22 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: c543e374-47ba-4641-99bb-99e5b5e3bd72 # Hero
+handle: home
+maxAuthors: 1
+minAuthors: 1
+name: home
+previewTargets:
+  -
+    label: 'Primary entry page'
+    refresh: '1'
+    urlFormat: '{url}'
+propagationMethod: all
+siteSettings:
+  bf661fc7-2d82-4a03-b863-713a03bf452c: # connectfolio
+    enabledByDefault: true
+    hasUrls: true
+    template: pages/home.twig
+    uriFormat: __home__
+type: single

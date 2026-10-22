@@ -1,0 +1,44 @@
+{% extends 'base.html.twig' %}
+{% block title %}Challenges | Connectfolio{% endblock %}
+{% block content %}
+    <main class="py-2 py-md-4">
+        <div class="container">
+            <!-- Hero Box Container (Position Relative) -->
+            <div class="custom_hero position-relative rounded-5 overflow-hidden p-4 p-md-5 d-flex align-items-center">
+                <!-- Static hero image -->
+                <div class="position-absolute top-0 start-0 w-100 h-100 z-0">
+                    <img src="./assets/img/heropicture.jpg" class="d-block w-100 h-100 object-fit-cover" alt="">
+                    <div class="custom_hero-overlay position-absolute top-0 start-0 w-100 h-100 pe-none" aria-hidden="true"></div>
+                </div>
+                <!-- FOREGROUND CONTENT (Position Relative, Stays Fixed) -->
+                <div class="position-relative z-1 row g-0 mx-0 w-100 py-md-4 small">
+                    <div class="col-12 col-xl-10">
+                        <!-- Subtitle -->
+                        <div class="text-white text-uppercase fw-semibold small mb-2">CREATIVE CHALLENGES</div>
+                        <!-- Hero Main Title -->
+                        <h1 class="display-4 custom_font-serif text-white fw-bold mb-3">Create. Share. Get Inspired.</h1>
+                        <!-- Category Selector Grid -->
+                        <!-- Hero Description -->
+                        <p class="text-white fw-light mb-0 col-12 col-md-8 col-lg-7">Join our creative challenges, show your work and connect with a community of creative minds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% include 'sections/challenge-feed.twig' %}
+{% endblock %}
+{% block video_modal %}
+    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalTitle" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content bg-black">
+                <div class="modal-header border-0">
+                    <span class="visually-hidden" id="videoModalTitle">View video</span>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close video"></button>
+                </div>
+                <div class="modal-body d-flex align-items-center justify-content-center">
+                    <video class="mw-100 mh-100 object-fit-contain" controls playsinline preload="none" aria-label="Video viewer"></video>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

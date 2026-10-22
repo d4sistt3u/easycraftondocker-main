@@ -1,0 +1,85 @@
+
+{# Get Hero data from Craft CMS #}
+{% set hero = hero ?? entry %}
+{% set heroImage = hero.heroImage.one() %}
+
+<main class="py-2 py-md-4">
+    <div class="container">
+
+        <!-- Hero Box Container -->
+        <div class="custom_hero position-relative rounded-5 overflow-hidden p-4 p-md-5 d-flex align-items-center">
+
+            <!-- Dynamic Hero Image -->
+            <div class="position-absolute top-0 start-0 w-100 h-100 z-0">
+
+                {% if heroImage %}
+                    <img
+                        src="{{ heroImage.url }}"
+                        class="d-block w-100 h-100 object-fit-cover"
+                        alt="{{ heroImage.title }}"
+                    >
+                {% endif %}
+
+                <div
+                    class="custom_hero-overlay position-absolute top-0 start-0 w-100 h-100 pe-none"
+                    aria-hidden="true">
+                </div>
+
+            </div>
+
+            <!-- Foreground Content -->
+            <div class="position-relative z-1 row g-0 mx-0 w-100 py-md-4 small">
+                <div class="col-12 col-xl-10">
+
+                    <!-- Hero Slogan -->
+                    <div class="text-white text-uppercase fw-semibold small mb-2">
+                        {{ hero.heroSlogan }}
+                    </div>
+
+                    <!-- Hero Main Title -->
+                    <h1 class="display-4 custom_font-serif text-white fw-bold mb-3">
+                        {{ hero.heroSubslogan }}
+                    </h1>
+
+                    <!-- Dynamic Category Selector Grid -->
+                    <div class="custom_hero-categories row row-cols-3 row-cols-sm-6 g-2 g-md-3 small mb-3">
+
+                        {% for category in hero.categoryItems.all() %}
+
+                            <div class="col">
+
+                                <a
+                                    href="#"
+                                    class="custom_category-box bg-white text-dark rounded-3 d-flex flex-column align-items-center justify-content-center text-decoration-none p-1 shadow-sm"
+                                >
+
+                                    <!-- Category Icon -->
+                                    <i class="bi {{ category.categoryIcon|e('html_attr') }} fs-5 mb-1"></i>
+
+                                    <!-- Category Title -->
+                                    <span class="small fw-medium text-nowrap">
+                                        {{ category.categoryTitle }}
+                                    </span>
+
+                                </a>
+
+                            </div>
+
+                        {% endfor %}
+
+                    </div>
+
+                    <!-- Hero Description -->
+                    {% if hero.heroDescription %}
+                        <p class="text-white fw-light mb-0 col-12 col-md-8 col-lg-7">
+                            {{ hero.heroDescription }}
+                        </p>
+                    {% endif %}
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</main>

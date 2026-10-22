@@ -1,0 +1,42 @@
+dateModified: 1792591033
+email:
+  fromEmail: cuong1412005@gmail.com
+  fromName: connectfolio
+  transportType: craft\mail\transportadapters\Sendmail
+fs:
+  publicUploads:
+    hasUrls: true
+    name: 'Public Uploads'
+    settings:
+      path: $ASSET_BASE_PATH
+    type: craft\fs\Local
+    url: $ASSET_BASE_URL
+meta:
+  __names__:
+    5b669591-cdf9-41f0-9a25-09e8fbc78629: connectfolio # connectfolio
+    37e65f76-721f-4e08-ac13-486f7d71b563: 'Hero Slogan' # Hero Slogan
+    66b89088-7ce6-40cb-b900-38e75fa322f6: 'Category Icon' # Category Icon
+    71e87e1a-3aab-4ebf-b2c0-096a081bbd0f: Uploads # Uploads
+    133d8a92-7bf9-457f-95ff-5286406764c7: 'Hero Subslogan' # Hero Subslogan
+    934a3e2c-64e0-4915-b1f4-cbdae514f7e1: 'Category Items' # Category Items
+    42632897-bd63-4615-b21b-a531a475f00d: 'Hero Image' # Hero Image
+    b4d2199e-0bca-4eff-8c7c-de69618e2fa4: 'Catergory Item' # Catergory Item
+    baee82b6-0d15-43e7-974d-f56d645d3e82: home # home
+    bf661fc7-2d82-4a03-b863-713a03bf452c: connectfolio # connectfolio
+    c077b3e1-bc36-442e-879c-2b916fd94d4c: 'Category Title' # Category Title
+    c543e374-47ba-4641-99bb-99e5b5e3bd72: Hero # Hero
+    f8232b26-dcac-4606-9c41-be5e2352397a: 'Hero Description' # Hero Description
+    fb40c857-50a0-43b7-a434-8365236ac29b: 'Page Bulder' # Page Bulder
+system:
+  edition: solo
+  live: true
+  name: connectfolio
+  schemaVersion: 5.11.0.2
+  timeZone: America/Los_Angeles
+users:
+  allowPublicRegistration: false
+  defaultGroup: null
+  photoSubpath: null
+  photoVolumeUid: null
+  require2fa: false
+  requireEmailVerification: true

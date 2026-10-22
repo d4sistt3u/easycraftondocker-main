@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: heroSlogan
+instructions: null
+name: 'Hero Slogan'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'A COMMUNITY FOR CREATIVE MINDS'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

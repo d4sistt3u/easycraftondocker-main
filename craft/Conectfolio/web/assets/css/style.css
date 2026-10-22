@@ -1,0 +1,256 @@
+/* Bootstrap utilities live in the HTML; project-specific styles use custom_. */
+
+/* Shared values: update here to keep related components consistent. */
+:root {
+  --custom-image-bg: #e2e2e2;
+  --custom-border-soft: #e5e7eb;
+  --custom-transition-fast: 0.2s ease;
+  --custom-transition-default: 0.25s ease;
+  --custom-hover-offset: -4px;
+  --custom-hero-overlay: rgba(0,0,0,0.4);
+  --custom-ratio-portrait: 4 / 5;
+  --custom-ratio-landscape: 16 / 10;
+  --custom-gallery-height: 480px;
+  --custom-action-offset: -1.5rem;
+}
+
+.custom_font-ubuntu {
+  font-family: "Ubuntu", sans-serif;
+}
+
+.custom_font-cantata {
+  font-family: "Cantata One", serif;
+}
+
+.custom_logo {
+  width: clamp(4.5rem, 20vw, 8rem);
+}
+
+.custom_search {
+  flex-basis: 0;
+
+  min-width: 0;
+}
+
+.custom_search-input {
+  min-width: 0;
+
+  height: 2.5rem;
+}
+
+@media (min-width: 992px) {
+  .custom_logo {
+    width: 10rem;
+  }
+}
+
+.custom_footer-logo {
+  width: 8rem;
+}
+
+.custom_social-icon {
+  width: 1.1rem;
+  height: 1.1rem;
+}
+
+.custom_btn-articles {
+  width: 292px;
+  max-width: 100%;
+  min-height: 56px;
+  padding: 0.625rem 1.5rem;
+  border: 3px solid var(--bs-black);
+  background-color: var(--bs-white);
+  color: var(--bs-black);
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.custom_btn-articles:hover,
+.custom_btn-articles:focus-visible,
+.custom_btn-articles:active {
+  border-color: var(--bs-black);
+  background-color: var(--bs-black);
+  color: var(--bs-white);
+}
+
+.custom_btn-articles:focus-visible {
+  outline: 2px solid var(--bs-black);
+  outline-offset: 3px;
+  box-shadow: none;
+}
+
+/* Keep aspect-ratio: Bootstrap ratio would absolutely position the icon and text. */
+.custom_category-box {
+  aspect-ratio: 1 / 1;
+  transition: transform var(--custom-transition-fast), box-shadow var(--custom-transition-fast);
+}
+
+.custom_category-box:hover {
+  transform: translateY(var(--custom-hover-offset));
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.custom_portfolio-img-box {
+  aspect-ratio: var(--custom-ratio-portrait);
+  background-color: var(--custom-image-bg);
+  transition: transform var(--custom-transition-default), box-shadow var(--custom-transition-default);
+}
+
+.custom_portfolio-card:hover .custom_portfolio-img-box {
+  transform: translateY(var(--custom-hover-offset));
+  box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.1) !important;
+}
+
+.custom_font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.custom_font-serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.custom_hero-overlay {
+  background-color: var(--custom-hero-overlay);
+}
+
+/* Keep the image frame spacious even when the text is smaller. */
+.custom_hero {
+  min-height: 34rem;
+}
+
+.custom_hero-categories {
+  max-width: 36rem;
+}
+
+.custom_card-transition {
+  transition: transform var(--custom-transition-default), box-shadow var(--custom-transition-default);
+}
+
+.custom_hover-lift:hover {
+  transform: translateY(var(--custom-hover-offset));
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.custom_rank-badge {
+  --bs-border-opacity: 0.2;
+  width: 2.25rem !important;
+  height: 2.25rem !important;
+  font-size: 0.875rem !important;
+
+  backdrop-filter: blur(6px) !important;
+}
+
+.custom_event-date-badge {
+  --bs-bg-opacity: 0.9;
+  min-width: 3.5rem !important;
+
+  backdrop-filter: blur(4px) !important;
+  border-radius: 12px !important;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1) !important;
+}
+
+.custom_challenge-img-box {
+  aspect-ratio: var(--custom-ratio-portrait);
+  background-color: var(--custom-image-bg);
+}
+
+.custom_event-img-box {
+  aspect-ratio: var(--custom-ratio-landscape);
+}
+
+.custom_insight-img-box {
+  aspect-ratio: var(--custom-ratio-landscape);
+  background-color: var(--custom-image-bg);
+}
+
+.custom_tiktok-card {
+  aspect-ratio: 9 / 16;
+}
+
+.custom_tiktok-grid {
+  max-height: 80vh;
+}
+
+.custom_bg-gradient-dark {
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.75) 100%);
+}
+
+/* Bootstrap updates the active state when switching tabs. */
+.custom_challenge-tab.active {
+  border-bottom: 2px solid var(--bs-black) !important;
+}
+
+.custom_swipe-deck-container {
+  max-width: 380px;
+  min-height: 480px;
+}
+
+.custom_card-deck-2 {
+  transform: rotate(-3deg);
+  border-color: #d1d5db !important;
+}
+
+.custom_card-deck-3 {
+  transform: rotate(3deg);
+  border-color: var(--custom-border-soft) !important;
+}
+
+.custom_action-btn {
+  --bs-border-color: var(--custom-border-soft);
+  width: 3.25rem;
+  height: 3.25rem;
+}
+
+.custom_btn-dislike {
+  left: var(--custom-action-offset);
+}
+
+.custom_btn-like {
+  right: var(--custom-action-offset);
+}
+
+.custom_gallery-puzzle-container {
+  height: 520px;
+}
+
+.custom_portfolio-grid,
+.custom_gallery-puzzle-container {
+  scrollbar-width: thin;
+  scrollbar-color: #cbd5e1 transparent;
+}
+
+.custom_gallery-upload-card {
+  width: 220px;
+  height: var(--custom-gallery-height);
+  border-style: dashed !important;
+  transition: background-color var(--custom-transition-fast);
+}
+
+.custom_gallery-upload-card:hover {
+  background-color: var(--bs-light) !important;
+}
+
+.custom_gallery-slot {
+  width: 320px;
+  height: var(--custom-gallery-height);
+}
+
+.custom_gallery-slot-wide {
+  width: 560px;
+  height: var(--custom-gallery-height);
+}
+
+.custom_gallery-stacked-slot {
+  width: 280px;
+  height: var(--custom-gallery-height);
+}
+
+.custom_profile-img-box {
+  aspect-ratio: 3 / 4;
+}
+
+.custom_bullet-dot {
+  width: 14px;
+  height: 14px;
+}

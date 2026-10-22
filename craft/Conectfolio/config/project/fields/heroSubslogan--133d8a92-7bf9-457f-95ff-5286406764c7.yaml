@@ -1,0 +1,16 @@
+columnSuffix: null
+handle: heroSubslogan
+instructions: 'Add text under the slogan'
+name: 'Hero Subslogan'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  initialRows: 4
+  multiline: false
+  placeholder: 'You are ...'
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

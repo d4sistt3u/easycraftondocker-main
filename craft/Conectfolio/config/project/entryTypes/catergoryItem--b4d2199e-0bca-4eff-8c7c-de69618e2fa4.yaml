@@ -1,0 +1,60 @@
+allowLineBreaksInTitles: false
+color: null
+description: null
+fieldLayouts:
+  a96df777-0447-41f4-9466-0c2ab7adc2cd:
+    cardThumbAlignment: end
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            dateAdded: '2026-10-21T13:34:09+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: c077b3e1-bc36-442e-879c-2b916fd94d4c # Category Title
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0e9a35eb-7564-402a-ae5e-68515a753416
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2026-10-21T13:34:09+00:00'
+            editCondition: null
+            elementCondition: null
+            elementEditCondition: null
+            fieldUid: 66b89088-7ce6-40cb-b900-38e75fa322f6 # Category Icon
+            handle: null
+            instructions: null
+            label: null
+            oldFieldUid: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 678d8d4a-2427-48c9-9cbc-405e8f74bd93
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 9f80ce7e-461e-41c3-bb76-c0576c52a6a2
+        userCondition: null
+    thumbFieldKey: null
+handle: catergoryItem
+hasTitleField: false
+icon: null
+name: 'Catergory Item'
+showSlugField: true
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+titleFormat: null
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
+uiLabelFormat: '{title}'
